@@ -1,0 +1,37 @@
+
+/*
+In order to work these styles need to move to style.css
+Small devices (landscape phones)
+
+
+/* You can add global styles to this file, and also import other style files */
+
+@media (min-width: 576px) {
+  body {
+    background-color:  red;
+  }
+}
+
+/* Medium devices (tablets) */
+
+@media (min-width: 768px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* Large devices (desktops) */
+
+@media (min-width: 1200px) {
+  body{
+    background-color: yellow;
+  }
+}
+
+/* Extra large devices (large desktops) */
+
+@media (max-width: 575px) {
+  body{
+    background-color: coral;
+  }
+}
