@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <h1>My Gaming App</h1>
+    <app-game-control
+      (incrementedNumber) = "onIncrementedNumber($event)">
+    </app-game-control>
+  </div>
+</div>
+
+<app-even *ngFor="let evenNum of evenNumbers" [num]="evenNum"></app-even>
+<app-odd *ngFor="let odNum of oddNumbers" [num]="odNum"></app-odd>
+

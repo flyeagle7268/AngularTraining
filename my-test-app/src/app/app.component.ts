@@ -1,0 +1,15 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'my-test-app';
+  value = 'Clear me';
+
+  add(){
+    return 1 + 2;
+  }
+}

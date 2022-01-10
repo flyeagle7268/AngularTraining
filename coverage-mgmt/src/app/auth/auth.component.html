@@ -1,0 +1,30 @@
+<div class="row">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control"
+              id="email" name="email"
+              ngModel
+              required email
+              #email="ngModel" placeholder="Email Id">
+        <span class="help-block" *ngIf="!email.valid && email.touched">
+          Please enter valid email..!
+        </span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control"
+              id="password" name="password"
+              ngModel required
+              #password="ngModel" placeholder="Password">
+        <span class="help-block" *ngIf="!password.valid && email.touched">
+          Please enter password</span>
+      </div>
+      <div>
+        <button class="btn btn-primary" type="submit">{{ isSignUp ? "Sign Up" : "Sign In" }}</button> |
+        Not registred? <a (click)="onSignup()">Sign Up</a>
+      </div>
+    </form>
+  </div>
+</div>

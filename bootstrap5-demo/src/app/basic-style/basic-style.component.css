@@ -1,0 +1,21 @@
+.header {
+  height: 40px;
+  color: #ffffff;
+}
+
+.content {
+  min-height: 600px;
+}
+
+.sidebar {
+  background-color: grey;
+  min-height: 900px;
+}
+
+.main-content {
+  background-color: #ffffff;
+}
+
+.footer {
+  height: 20px;
+}

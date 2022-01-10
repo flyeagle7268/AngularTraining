@@ -1,0 +1,14 @@
+.sidebar {
+  background-color: #212529;
+  max-height: 900px;
+  overflow-y: scroll;
+}
+
+.list-group-item {
+  background-color: transparent;
+  color: #ddd;
+}
+
+thead{
+  background-color: #dddddd5b;
+}
